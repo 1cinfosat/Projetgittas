@@ -14,6 +14,17 @@ public class Entreprise {
         }
     }
 
-
+    //TO DO 4
+    public void afficherNbrPrestation(){
+        int productCount = 0;
+        int serviceCount = 0;
+        for (Prestation p: prestations) {
+            if(p instanceof Service){
+                serviceCount++;
+            }
+            if (p instanceof Produit ){
+                productCount++;
+            }
+        }
 
 }
