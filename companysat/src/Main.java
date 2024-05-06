@@ -49,6 +49,12 @@ public class Main {
         //TO DO 10
         System.out.println("Expected result : Avaxia");
         entreprise.topServiceClient();
+        System.out.println("TO DO 3 Exception : *********************");
+        try {
+            entreprise.ajouterPrestation(new Prestation(1, "Bolt App", "Bolt Inc"));
+        }catch (PrestationExisteException pex){
+            pex.printStackTrace();
+        }
 
     }
 }
