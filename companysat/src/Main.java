@@ -28,17 +28,7 @@ public class Main {
         //TO DO 5
         System.out.println("Expected result : 2 Prestations");
         System.out.println(entreprise.prestationparClient("Orange Tunisie").size());
-        System.out.println("TO DO 6 : *********************");
-
-        //TO DO 6
-        System.out.println(entreprise.filterParClient());
-
-        System.out.println("TO DO 7 : Clients | Projects *********************");
-        //TO DO 7
-        System.out.println(entreprise.afficherClient());
-        System.out.println(entreprise.afficherProjects());
-
-
+     
 
     }
 }
