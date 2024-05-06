@@ -35,7 +35,20 @@ public class Main {
         //TO DO 7
         System.out.println(entreprise.afficherClient());
         System.out.println(entreprise.afficherProjects());
+        System.out.println("TO DO 8 : Recuperer services | total *********************");
+        //TO DO 8
+        System.out.println("Expected result : Avaxia [13050] | Orange[3600]");
+        System.out.println(entreprise.recupererServices());
 
+        System.out.println("TO DO 9 : *********************");
+        //TO DO 9 :
+        System.out.println("Expected result : 21400");
+        entreprise.totalVentesProduits();
+
+        System.out.println("TO DO 10 : *********************");
+        //TO DO 10
+        System.out.println("Expected result : Avaxia");
+        entreprise.topServiceClient();
 
     }
 }
