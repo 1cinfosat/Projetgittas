@@ -35,6 +35,9 @@ public class Main {
 
         System.out.println("TO DO 7 : Clients | Projects *********************");
         //TO DO 7
+        System.out.println(entreprise.afficherClient());
+        System.out.println(entreprise.afficherProjects());
+
 
 
     }
