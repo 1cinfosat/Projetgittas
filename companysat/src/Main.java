@@ -10,5 +10,16 @@ public class Main {
         entreprise.prestations.add(new Produit(4, "E-learning Platform", "MSB", 15200, "12/2022"));
         entreprise.prestations.add(new Produit(5,"Social Network App", "Orange Tunisie", 8800, "03/2023"));
         entreprise.prestations.add(new Produit(6,"Scanner de cheque", "BNA", 12600, "12/2023"));
+        //Methods testing...
+        System.out.println("TO DO 3 : *********************");
+        //TO DO 3
+        System.out.println("Expected result : 7");
+        try {
+            entreprise.ajouterPrestation(new Prestation(7, "Bolt App clone", "TunTaxi Inc"));
+        }catch (PrestationExisteException pex){
+            pex.printStackTrace();
+        }
+        System.out.println(entreprise.prestations.size());
+
     }
 }
