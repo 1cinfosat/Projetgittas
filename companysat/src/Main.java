@@ -20,6 +20,10 @@ public class Main {
             pex.printStackTrace();
         }
         System.out.println(entreprise.prestations.size());
+        System.out.println("TO DO 4 : *********************");
+        //TO DO 4
+        System.out.println("Expected result : 2 | 3");
+        entreprise.afficherNbrPrestation();
 
     }
 }
