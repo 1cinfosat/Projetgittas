@@ -40,5 +40,15 @@ public class Entreprise {
         return l;
     }
 
+    //TO DO 6
+    public Map<String, List<Prestation>> filterParClient(){
+        return prestations.stream().collect(Collectors.groupingBy(Prestation::getNom_client));
+    }
+
+    //TO DO 7
+    public List<String> afficherClient(){
+        return prestations.stream().map(e-> e.getNom_client()).distinct().sorted().collect(Collectors.toList());
+    }
+
 
 }
