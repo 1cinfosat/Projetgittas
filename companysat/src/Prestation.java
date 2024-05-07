@@ -42,4 +42,8 @@ public sealed class Prestation permits Service, Produit {
         if (!(o instanceof Prestation that)) return false;
         return id == that.id;
     }
+    @Override
+    public String toString() {
+
+    }
 }
