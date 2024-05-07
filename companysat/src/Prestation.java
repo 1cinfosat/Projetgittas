@@ -36,5 +36,10 @@ public sealed class Prestation permits Service, Produit {
     public void setNom_client(String nom_client) {
         this.nom_client = nom_client;
     }
-    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Prestation that)) return false;
+        return id == that.id;
+    }
 }
