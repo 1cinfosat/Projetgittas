@@ -50,5 +50,10 @@ public class Entreprise {
         return prestations.stream().map(e-> e.getNom_client()).distinct().sorted().collect(Collectors.toList());
     }
 
+    public List<String> afficherProjects(){
+        return prestations.stream().map(e-> e.getNom_projet()).distinct().sorted().collect(Collectors.toList());
+    }
+git 
+
 
 }
