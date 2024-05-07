@@ -46,14 +46,11 @@ public class Entreprise {
     }
 
     //TO DO 7
-    public List<String> afficherClient(){
-        return prestations.stream().map(e-> e.getNom_client()).distinct().sorted().collect(Collectors.toList());
-    }
-
     public List<String> afficherProjects(){
         return prestations.stream().map(e-> e.getNom_projet()).distinct().sorted().collect(Collectors.toList());
     }
-git 
+
+
 
 
 }
