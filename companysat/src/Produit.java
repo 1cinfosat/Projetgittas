@@ -24,5 +24,20 @@ public class Produit extends Prestation{
 
 
     }
+    //Equals && Hashcode
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Produit produit = (Produit) o;
+        return prix_total == produit.prix_total && Objects.equals(date_livraison, produit.date_livraison);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prix_total, date_livraison);
+    }
 
 }
