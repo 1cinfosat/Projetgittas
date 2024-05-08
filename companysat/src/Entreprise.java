@@ -49,6 +49,9 @@ public class Entreprise {
     public List<String> afficherProjects(){
         return prestations.stream().map(e-> e.getNom_projet()).distinct().sorted().collect(Collectors.toList());
     }
+
+
+    //TO DO 8
     public Map<Service, Integer> recupererServices() {
 
         Map<Service, Integer> services = new HashMap<>();
@@ -68,6 +71,10 @@ public class Entreprise {
         System.out.println(totalVentesProduits);
     }
 
-
+    //TO DO 10
+    public void topServiceClient() {
+        Prestation prestation = prestations.stream().filter(p -> p instanceof Service).max((s1, s2) ->  - (((Service) s2).getNombre_heures() * ((Service) s2).getPrix_heure())).get();
+        System.out.println(prestation.getNom_client());
+    }
 
 }
