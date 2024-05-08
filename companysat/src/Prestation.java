@@ -44,6 +44,10 @@ public sealed class Prestation permits Service, Produit {
     }
     @Override
     public String toString() {
-
+        return "Prestation{" +
+                "id=" + id +
+                ", nom_projet='" + nom_projet + '\'' +
+                ", nom_client='" + nom_client + '\'' +
+                '}';
     }
 }
