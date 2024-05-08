@@ -6,5 +6,9 @@ public class Produit extends Prestation{
     //var
     private int prix_total;
     private String date_livraison;
+    //con
+    public Produit(){
+
+    }
 
 }
