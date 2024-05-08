@@ -7,7 +7,11 @@ public class Produit extends Prestation{
     private int prix_total;
     private String date_livraison;
     //con
-    public Produit(){
+    public Produit() {
+
+    }
+    //Method
+    public void DeleteProduct(){
 
     }
 
