@@ -26,3 +26,13 @@ public final class Service extends Prestation{
 
     public void setPrix_heure(int prix_heure) {
         this.prix_heure = prix_heure;
+   }
+     public String toString() {
+        return "Service{" +
+                "nombre_heures=" + nombre_heures +
+                ", prix_heure=" + prix_heure +
+                ", id=" + id +
+                ", nom_projet='" + nom_projet + '\'' +
+                ", nom_client='" + nom_client + '\'' +
+                '}';
+    }
