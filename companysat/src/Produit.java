@@ -7,7 +7,21 @@ public class Produit extends Prestation{
     private int prix_total;
     private String date_livraison;
     //con
-    public Produit(){
+    public Produit() {
+
+    }
+
+    //parameterized constructor
+
+
+    public Produit(int prix_total, String date_livraison) {
+        this.prix_total = prix_total;
+        this.date_livraison = date_livraison;
+    }
+
+    //Method
+    public void DeleteProduct(){
+
 
     }
 
