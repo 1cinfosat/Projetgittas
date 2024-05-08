@@ -1,4 +1,3 @@
-add serivices 
 # JAVA PROJECT
 This is an academic project that was developed by
  Ayoub Guenichi,
