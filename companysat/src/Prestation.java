@@ -5,14 +5,18 @@ public sealed class Prestation permits Service, Produit {
     protected int id;
     protected String nom_projet, nom_client;
 
+
+// default constrecteur
     public Prestation() {
     }
 
+    //constrecteur for Entreprisecon
     public Prestation(int id, String nom_projet, String nom_client) {
         this.id = id;
         this.nom_projet = nom_projet;
         this.nom_client = nom_client;
     }
+    // delartion gettre and settre
     public int getId() {
         return id;
     }
@@ -49,5 +53,7 @@ public sealed class Prestation permits Service, Produit {
                 ", nom_projet='" + nom_projet + '\'' +
                 ", nom_client='" + nom_client + '\'' +
                 '}';
+
+
     }
 }
