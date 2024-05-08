@@ -49,7 +49,24 @@ public class Entreprise {
     public List<String> afficherProjects(){
         return prestations.stream().map(e-> e.getNom_projet()).distinct().sorted().collect(Collectors.toList());
     }
+    public Map<Service, Integer> recupererServices() {
 
+        Map<Service, Integer> services = new HashMap<>();
+        Function<Service, Integer> fun = e -> e.getPrix_heure() * e.getNombre_heures();
+        for (Prestation p: prestations) {
+            if(p instanceof Service s){
+                services.put(s, fun.apply(s));
+            }
+        }
+
+        return services;
+    }
+
+    //TO DO 9
+    public void totalVentesProduits() {
+        int totalVentesProduits = prestations.stream().filter(p -> p instanceof Produit).filter(p-> ((Produit) p).getDate_livraison().endsWith("2023")).mapToInt(p-> ((Produit) p).getPrix_total()).sum();
+        System.out.println(totalVentesProduits);
+    }
 
 
 
