@@ -62,6 +62,12 @@ public class Entreprise {
         return services;
     }
 
+    //TO DO 9
+    public void totalVentesProduits() {
+        int totalVentesProduits = prestations.stream().filter(p -> p instanceof Produit).filter(p-> ((Produit) p).getDate_livraison().endsWith("2023")).mapToInt(p-> ((Produit) p).getPrix_total()).sum();
+        System.out.println(totalVentesProduits);
+    }
+
 
 
 }
