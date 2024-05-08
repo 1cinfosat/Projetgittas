@@ -39,6 +39,7 @@ public class Entreprise {
         }
         return l;
     }
+    
 
     //TO DO 6
     public Map<String, List<Prestation>> filterParClient(){
