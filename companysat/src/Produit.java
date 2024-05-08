@@ -25,4 +25,22 @@ public class Produit extends Prestation{
 
     }
 
+    //Getters && Setters
+
+
+    public int getPrix_total() {
+        return prix_total;
+    }
+
+    public void setPrix_total(int prix_total) {
+        this.prix_total = prix_total;
+    }
+
+    public String getDate_livraison() {
+        return date_livraison;
+    }
+
+    public void setDate_livraison(String date_livraison) {
+        this.date_livraison = date_livraison;
+    }
 }
