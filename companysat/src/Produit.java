@@ -43,4 +43,16 @@ public class Produit extends Prestation{
     public void setDate_livraison(String date_livraison) {
         this.date_livraison = date_livraison;
     }
+
+
+    //Display
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Produit{" +
+                "prix_total=" + prix_total +
+                ", date_livraison='" + date_livraison + '\'' +
+                '}';
+    }
 }
