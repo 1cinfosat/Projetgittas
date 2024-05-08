@@ -1,7 +1,5 @@
-import java.util.Objects;
-
-public class Service extends Prestation{  
-  //var
+public final class Service extends Prestation{
+    //var
     private int nombre_heures;
     private int prix_heure;
     //con
@@ -13,10 +11,18 @@ public class Service extends Prestation{
         this.prix_heure = prix_heure;
         this.nombre_heures = nombre_heures;
     }
-   public void setNombre_heures(int nombre_heures) {
+
+    public int getNombre_heures() {
+        return nombre_heures;
+    }
+
+    public void setNombre_heures(int nombre_heures) {
         this.nombre_heures = nombre_heures;
     }
+
+    public int getPrix_heure() {
+        return prix_heure;
+    }
+
     public void setPrix_heure(int prix_heure) {
         this.prix_heure = prix_heure;
-    }
-}
